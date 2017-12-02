@@ -19,9 +19,9 @@ endif
 
 " Key map 'mdt' to ':Mdtable '
 if !hasmapto('<Plug>Mdtable')
-  nmap <buffer> mdt <Plug>Mdtable
+  nmap mdt <Plug>Mdtable
 endif
-nmap <buffer> <Plug>Mdtable :Mdtable 
+nmap <Plug>Mdtable :Mdtable 
 
 let &cpo = s:save_cpo
 unlet s:save_cpo
