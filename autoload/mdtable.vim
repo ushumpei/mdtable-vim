@@ -1,6 +1,6 @@
 scriptencoding utf-8
 
-function! mdtable#write(rowNum, colNum, ...) abort
+function! mdtable#write(rowNum, colNum, ...)
   try
     let table = s:create(a:rowNum, a:colNum)
     execute "normal o" . table . "\<Esc>"
